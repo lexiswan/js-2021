@@ -12,7 +12,7 @@ let dacia = {
     paint: function(color) {
         this.color = color
  },
- move: function(distance) {
+ move(distance) {
      consumption = this.averageConsumption * distance / 100 
      if (consumption > this.batteryCharge) {
          this.batteryCharge = 0
@@ -22,8 +22,8 @@ let dacia = {
      this.mileage +=distance
      }
  }, 
- 
- recharge: function() {
+ //recharge: function() 
+ recharge() {
      this.batteryCharge = this.batteryCapacity
  },
  distanceToEmpty: function(){
