@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+div {
+    height: 10em;
+    width: 20em;
+    background-color: lightseagreen;
+}
+@keyframes disappear {
+    to {
+        background-color: white;
+    }
+}
+.disappear {
+    animation-name: disappear;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+}
