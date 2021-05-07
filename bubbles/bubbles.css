@@ -4,11 +4,12 @@ body {
 }
 @keyframes bubble {
     to {
-        transform: translateY(0vh) scale(2);
+        transform: translateY(-5vh) scale(2);
         
     }
 }
 .bubble {
+    position: absolute;
     height: 0.5em;
     width: 0.5em;
     border-color: rgb(212, 32, 0);
@@ -18,4 +19,6 @@ body {
     border-style: solid;
       animation-name: bubble;
     animation-duration: 3s;
+    animation-timing-function: linear;
+    
 }
