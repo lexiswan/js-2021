@@ -1,7 +1,6 @@
 document.querySelector("div")
-.addEventListener("click", function () {
-    document.querySelector("div") .classList.add("disappear")
-})
+.addEventListener("click", () => document.querySelector("div") .classList.add("disappear")
+)
 
 document.querySelector("div")
 .addEventListener("animationend", function () {
