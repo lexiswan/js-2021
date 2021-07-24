@@ -2,6 +2,25 @@
 
    startButton.addEventListener("click", startGame)
 
+   //cand este apasata o tasta apelam functia pressKey
+   window.addEventListener("keydown", pressKey)
+
+   function pressKey(event) {
+       //ca sa nu mai depinde de CAPSLOCK
+    let letter = event.key.toUpperCase()
+    let divs = document.querySelectorAll("." + letter)
+    divs.forEach(div => div.remove())
+   }
+    
+    /*function pressKey(event) {
+    let letter = event.key
+    //gasim primul element/div care are clasa literei apasate
+    let div = document.querySelector("." + letter)
+    // facem divul sa dispara
+    div.remove()
+   }*/
+    
+
     function startGame() {
     // ascunde butonul
     startButton.classList.add("hidden")
